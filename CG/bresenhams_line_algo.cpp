@@ -40,4 +40,4 @@ int main() {
     line(x3, y3, x4, y4);
     getch();
     closegraph();
-}
+    }
