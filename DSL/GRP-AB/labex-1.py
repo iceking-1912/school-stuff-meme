@@ -1,4 +1,3 @@
-
 cric_list = []
 bad_list = []
 foot_list = []
@@ -80,10 +79,32 @@ def subtracter(lst1, lst2):
                 pass
         return lstsub
 
-
-# print()
 print("A)", intersection(cric_list, bad_list))
 print("B)", subtracter(intersection(cric_list, bad_list), union(cric_list, bad_list)))
 print("C)", subtracter(foot_list, union(intersection(foot_list, cric_list), intersection(foot_list, bad_list))))
 print("D)", subtracter(union(cric_list, foot_list),
                        union(intersection(cric_list, bad_list), intersection(bad_list, foot_list))))
+
+# Output:
+# No. of Cricket Players- 5
+# Roll No. - 10
+# Roll No. - 20
+# Roll No. - 30
+# Roll No. - 40
+# Roll No. - 50
+# No. of Badminton Players- 4
+# Roll No. - 60
+# Roll No. - 70
+# Roll No. - 80
+# Roll No. - 90
+# No. of Football Players- 3
+# Roll No. - 12
+# Roll No. - 10
+# Roll No. - 70
+# Cricket List- [10, 20, 30, 40, 50]
+# Badminton List- [60, 70, 80, 90]
+# Football List- [12, 10, 70]
+# A) []
+# B) [60, 70, 80, 90, 10, 20, 30, 40, 50]
+# C) [12]
+# D) [12]
