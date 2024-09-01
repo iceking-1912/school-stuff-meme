@@ -1,6 +1,6 @@
 #include <graphics.h>
 
-main(){
+int main(){
 	initwindow(1000,1000);
 //	int x = 100,y = 100;
 //	
